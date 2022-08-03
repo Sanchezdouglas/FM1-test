@@ -2,24 +2,32 @@
 
 function BinarioADecimal(num) {
   // tu codigo aca
-  let arr= num.toString().split("").reverse().join("")
-  let Decimal = 0;
-  for(let i=0; i<arr.length;i++) {
-    Decimal += (Math.pow(2,1)*arr[i])
+  var decimal = 0;
+
+  for(let i = 0; i < num.length; i++) {
+    var posi = num.length -1 -i;
+    decimal = decimal + (2 ** posi) * num [i];
+
   }
-  return Decimal;
+return decimal;
+
+// Metodo abreviado 
+// var baDecimal = parseInt(unm, 2);
+//return baDecimal;
 }
+
 
 function DecimalABinario(num) {
   // tu codigo aca
-  let arr = [];
-  let resto = 0;
-  while(num>0) {
-    resto = num % 2;
-    num = Math.floor(num/2);
-    arr.unshift(resto);
+  var binario = [];
+
+  while(num / 2 !== 0) {
+    binario.unshift(num % 2);
+    num = Math.floor(num / 2);
   }
-  return arr.joi("");
+return binario.join("");
+
+
 }
 
 
