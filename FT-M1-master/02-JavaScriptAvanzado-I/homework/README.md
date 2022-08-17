@@ -75,10 +75,10 @@ console.log(pm);
 ¿Cuál crees que será el resultado de la ejecución de estas operaciones?:
 
 ```javascript
-6 / "3"
-"2" * "3"
-4 + 5 + "px"
-"$" + 4 + 5
+6 / "3" //Resultado 3   #(OJO si seria de esta manera (6 +"3") no lo suma lo toma como numero y string (Se llama coecion) 
+"2" * "3" //Resultado 6 Los toma cm numero
+4 + 5 + "px" //Resultado 9px (Tenemos numeros y string los concatena)
+"$" + 4 + 5 //Resultado $45 (Me toma el string)
 "4" - 2
 "4px" - 2
 7 / 0

@@ -7,7 +7,7 @@ function BinarioADecimal(num) {
   for(let i = 0; i < num.length; i++) {
     var posi = num.length -1 -i;
     decimal = decimal + (2 ** posi) * num [i];
-
+22
   }
 return decimal;
 
